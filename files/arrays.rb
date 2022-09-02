@@ -17,7 +17,7 @@ print "\n 3 random elements form the array: "
 print nums.sample(3)
 
 
-##Rotate the array
+##Rotate the array of three
 def rotate(nums)
     rotated = nums[2], nums[0], nums[1]
     return rotated
