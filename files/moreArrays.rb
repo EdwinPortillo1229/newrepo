@@ -71,6 +71,3 @@ end
 if oper == 'divide'
     quotArray(nums)
 end
-
-
-
