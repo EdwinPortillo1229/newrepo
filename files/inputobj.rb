@@ -30,18 +30,35 @@ class Employee
     end
 
     def to_s
-        "\n\nThis employee's name is #{@name}, they are #{@age} years old and work as a(n) #{@position}."
+        "*** NEW EMPLOYEE ADDED *** \nThis employee's name is #{@name}, they are #{@age} years old and work as a(n) #{@position}."
     end
 end
+def createEmployee(username)
+    @username = username
+    puts "Please enter employee name: "
+    name = gets.chomp.capitalize()
+    puts "Please enter employee age: "
+    age = gets.chomp.to_i
+    puts "Please enter employee position: "
+    position = gets.chomp.capitalize()
+    username = Employee.new(name, age, position)
+    puts username
+end
 
+objects = []
 
-puts "Please enter employee name: "
-name = gets
-puts "Please enter employee age: "
-age = gets.to_i
-puts "Please enter employee position: "
-position = gets
+puts "How many employees would you like to add?"
+num_of_emp = gets.chomp.to_i
 
-employee1 = Employee.new(name, age, position)
+for i in 1 .. num_of_emp
+    puts"\n\nCreating employee # #{i}"
+    puts "Please enter a username: "
+    username = gets.chomp
+    createEmployee(username)
+    objects << @username
 
-puts employee1
+    
+end
+
+puts "\n\nEmployees created:  #{objects.length} "
+puts objects
