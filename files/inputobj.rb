@@ -34,6 +34,7 @@ class Employee
     end
 end
 
+
 puts "Please enter employee name: "
 name = gets
 puts "Please enter employee age: "
