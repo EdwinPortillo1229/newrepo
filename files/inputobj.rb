@@ -61,6 +61,4 @@ for i in 1 .. num_of_emp
 end
 
 puts "\n\nEmployees created:  #{objects.length} "
-for i in Employee
-    put Employee.name
-end
+puts objects
