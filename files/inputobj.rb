@@ -3,6 +3,7 @@ class Employee
         @name = name
         @age = age
         @position = position
+        
     end
 
     def setName(name)
@@ -45,7 +46,7 @@ def createEmployee(username)
     puts username
 end
 
-objects = []
+
 
 puts "How many employees would you like to add?"
 num_of_emp = gets.chomp.to_i
@@ -55,11 +56,8 @@ for i in 1 .. num_of_emp
     puts "Please enter a username: "
     username = gets.chomp
     createEmployee(username)
-    objects << @username
 end
 
-puts "\n\nEmployees created:  #{objects.length} "
+puts "\n\nEmployees created: #{num_of_emp} "
 
-for i in objects
-    puts i
-end
+
