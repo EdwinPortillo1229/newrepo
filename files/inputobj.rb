@@ -56,8 +56,6 @@ for i in 1 .. num_of_emp
     username = gets.chomp
     createEmployee(username)
     objects << @username
-
-    
 end
 
 puts "\n\nEmployees created:  #{objects.length} "
